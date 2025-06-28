@@ -5,9 +5,23 @@ dotenv.config();
 import express from 'express'
 import cors from 'cors'
 import mongoose from 'mongoose'
+import errorMiddleware from './error/errorMiddleware.js'
 
 const app = express();
 app.use(cors());
+
+//Routes
+
+
+
+
+
+
+
+
+
+//Error middleware
+app.use(errorMiddleware);
 
 
 mongoose.connect(process.env.MONGO_CONNECTION_STRING)
